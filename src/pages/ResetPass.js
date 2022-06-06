@@ -24,7 +24,7 @@ const ResetPass = ({ setShowReset }) => {
     }
     return (
         <Row className="d-flex justify-content-center align-item-center">
-            <Col>
+            <Col lg={6}>
                 <h1>Reset password</h1>
                 <hr className='my-4' />
                 <Form onSubmit={handleSubmit} className="d-flex flex-column bg-light border p-4">
@@ -50,8 +50,8 @@ const ResetPass = ({ setShowReset }) => {
                             minLength={8}
                             required />
                     </Form.Group>
-                    <div className='d-flex justify-content-between mt-5'>
-                        <Button className='w-50 align-self-center' variant="success" type="submit" >
+                    <div className='d-flex justify-content-around mt-5'>
+                        <Button variant="success" type="submit" >
                             Submit
                         </Button>
                         <Button variant='outline-danger' onClick={() => setShowReset(false)}>Cancel</Button>
